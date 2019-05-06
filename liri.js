@@ -1,6 +1,34 @@
 require("dotenv").config();
 // code required to import the keys.js file and store it in a variable
 var keys = require("./keys.js");
+
+var Twitter = require("twitter");
+
+var client  = new Twitter(keys.twitterKeys);
+
+var params = {screen_name: "inrtracker"};
+client.get("statuses/user_timeline", params, function (error, tweets, response) {
+    if (!error) {
+        console.log(tweets);
+
+for (var i=0; i<tweets.length; i++) {
+    console.log(tweets[i].created_at);
+    console.log("");
+    console.log(tweets[i].text);
+}
+
+
+
+
+
+
+
+
+
+
+    }
+});
+
 var Spotify = require("node-spotify-api");
 
 var spotify = new Spotify(keys.spotify);
