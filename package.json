@@ -23,7 +23,6 @@
     "moment": "^2.24.0",
     "node-spotify-api": "^1.0.7",
     "request": "^2.88.0",
-    "spotify": "^0.3.0",
-    "twitter": "^1.7.1"
+    "spotify": "^0.3.0"
   }
 }
