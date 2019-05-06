@@ -1,4 +1,4 @@
-spotify-this-song,"I Want it That Way"
+node liri.js spotify-this-song "the less I know the better"
 node liri.js concert-this "coldplay"
 node liri.js movie-this "Tommy Boy"
 node liri.js "be positive"
